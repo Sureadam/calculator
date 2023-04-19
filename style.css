@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-image: linear-gradient(to right, #7e22ce, #ec4899);
+    background-size: 200% 100%;
+    animation: move 3s infinite ease-in-out;
+}
+h1 {
+    background-image: linear-gradient(to right, #22ce8c, #0f77d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: white;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid black;
+    padding: 8px;
+    width: 180px;
+}
+.input {
+    border: 1px solid grey;
+    padding: 10px;
+    background-color: aliceblue;
+}
+.input p {
+    width: 140px;
+    overflow-x: auto;
+}
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 4px;
+}
+.keyboard button {
+    height: 20px;
+    width: 50px;
+    overflow: hidden;
+    background-image: radial-gradient(circle, red, yellow, green);
+    animation: slide 3s ease-in-out ;
+}
+
+@keyframes slide {
+    0% {height: 0;}
+    100% {height: 20px}
+}
+@keyframes move {
+    0%,
+    100% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+.clear button {
+    background-image: radial-gradient(circle, goldenrod, rgb(32, 218, 48), goldenrod);
+    animation: move 2s ease-in;
+    width: 100%;
+    padding: 5px;
+}

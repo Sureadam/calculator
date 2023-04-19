@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="main">
+        <div class="input">
+            <p id="inp"></p>
+        </div>
+        <div class="keyboard">
+            <button id="calc" onclick="writer('1')">1</button>
+            <button id="calc" onclick="writer('2')">2</button>
+            <button id="calc" onclick="writer('3')">3</button>
+            <button id="calc" onclick="writer('4')">4</button>
+            <button id="calc" onclick="writer('5')">5</button>
+            <button id="calc" onclick="writer('6')">6</button>
+            <button id="calc" onclick="writer('7')">7</button>
+            <button id="calc" onclick="writer('8')">8</button>
+            <button id="calc" onclick="writer('9')">9</button>
+            <button id="calc" onclick="writer('0')">0</button>
+            <button id="calc" onclick="writer('+')">+</button>
+            <button id="calc" onclick="writer('-')">-</button>
+            <button id="calc" onclick="writer('*')">*</button>
+            <button id="calc" onclick="writer('/')">/</button>
+            <button id="calc" onclick="calculate('=')">=</button>
+        </div>
+        <div class="clear">
+            <button id="eraser" onclick="eraser()">CLEAR</button>
+        </div>
+    </div>
+    <p>&copy 2023  Adam Jamiu (Sureadam)</p>
+</body>
+</html>
