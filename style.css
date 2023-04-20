@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    background-image: linear-gradient(to right, #7e22ce, #ec4899);
+    background-image: linear-gradient(to right, #051025, #050320d2);
     background-size: 200% 100%;
     animation: move 3s infinite ease-in-out;
 }
@@ -47,9 +47,10 @@ h1 {
     height: 20px;
     width: 50px;
     overflow: hidden;
-    background-image: radial-gradient(circle, #800080, #a324a375, #ab58b6);
     animation: slide 3s ease-in-out ;
-    color: #fff;
+    color: #ffffff;
+    background-color: #344054;
+    text-align: center;
 }
 
 @keyframes slide {
@@ -66,8 +67,12 @@ h1 {
     }
 }
 .clear button {
-    background-image: radial-gradient(circle,#800080, #a324a375, #ab58b6);
+    background-color: #4571ec;
     animation: move 2s ease-in;
     width: 100%;
     padding: 5px;
+    color: #fafafa;
+}
+.copy {
+    color: #fafafa;
 }
