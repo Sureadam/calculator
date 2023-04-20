@@ -47,7 +47,7 @@ h1 {
     height: 20px;
     width: 50px;
     overflow: hidden;
-    background-image: radial-gradient(circle, red, yellow, green);
+    background-image: radial-gradient(circle, #800080, #a324a375, #ab58b6);
     animation: slide 3s ease-in-out ;
     color: #fff;
 }
@@ -66,7 +66,7 @@ h1 {
     }
 }
 .clear button {
-    background-image: radial-gradient(circle, goldenrod, rgb(32, 218, 48), goldenrod);
+    background-image: radial-gradient(circle,#800080, #a324a375, #ab58b6);
     animation: move 2s ease-in;
     width: 100%;
     padding: 5px;
