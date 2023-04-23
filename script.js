@@ -1,5 +1,6 @@
 let inputEl = document.getElementById("inp")
 let number = document.getElementById("calc").innerHTML
+let resultEl = document.getElementById("result")
 let equation = ""
 function writer(value) {
     let numberStr = value 
@@ -10,8 +11,14 @@ function writer(value) {
 
 function eraser() {
     inputEl.textContent = ""
+    resultEl.textContent = ""
 }
 
 function calculate() {
-    inputEl.textContent = eval(equation)
+    resultEl.textContent = eval(equation)
+}
+let genEl = document.getElementById("oshey")
+function updater() {
+  var element = document.getElementById("main");
+  element.classList.toggle("dark-mode");
 }
